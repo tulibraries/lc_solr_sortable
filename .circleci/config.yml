@@ -13,7 +13,7 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
-      - run: bundle-install
+      - run: bundle install
       - run:
           name: lint
           command: bundle exec rubocop
